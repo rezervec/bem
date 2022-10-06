@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+body {
+  font-family: "Open Sans";
+  margin: 0;
+}
+
+.block {
+  width: 90%;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 0.3px solid #828282;
+  border-radius: 16px;
+}
+.block__info {
+  padding: 0 10px;
+}
+.block__main-img {
+  overflow: hidden;
+}
+.block__published {
+  display: flex;
+  gap: 10px;
+}
+.block__published img {
+  margin: auto 0;
+}
+.block__published p {
+  color: #9E9E9E;
+}
+.block__service {
+  display: grid;
+  grid-template-columns: 10% auto;
+  margin-bottom: 1.2em;
+}
+.block__service img {
+  margin: auto 0;
+}
+.block__service p {
+  margin: auto 0;
+}
+.block__service-time {
+  margin-top: 0.5em;
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+}
+.block__service-time div {
+  background-color: #D9E8FF;
+  padding: 3px 13px;
+  margin-right: 6px;
+  border-radius: 11px;
+}
+.block__action {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+}
+.block__price {
+  display: flex;
+  flex-direction: column;
+}
+.block__price div {
+  font-size: 35px;
+}
+.block__price p {
+  margin: 0;
+}
+.block__button {
+  font-size: 14px;
+  padding: 10px 40px;
+  background-color: #FED74B;
+  border: 0.5px solid #CBA500;
+  border-radius: 20px;
+}/*# sourceMappingURL=style.css.map */

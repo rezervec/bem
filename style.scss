@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+// $main-indent: 2%;
+
+body {
+  font-family: 'Open Sans';
+  margin: 0;
+}
+
+.block {
+  width: 90%;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 0.3px solid #828282;
+  border-radius: 16px;
+
+  &__info {
+    padding: 0 10px;
+  }
+
+  &__main-img {
+    overflow: hidden;
+  }
+
+  &__published {
+    display: flex;
+    gap: 10px;
+
+    img {margin: auto 0;}
+    p {color: #9E9E9E;}
+  }
+
+  h4 {
+
+  }
+
+  &__services {
+  }
+
+  &__service {
+    display: grid;
+    grid-template-columns: 10% auto;
+    margin-bottom: 1.2em;
+
+    img {margin: auto 0;}
+    p {margin: auto 0;}
+  }
+
+  &__service-time {
+    margin-top: 0.5em;
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+      background-color: #D9E8FF;
+      padding: 3px 13px;
+      margin-right: 6px;
+      border-radius: 11px;
+    }
+  }
+
+  &__action {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    
+    div {font-size: 35px;}
+    p {margin: 0;}
+  }
+
+  &__button {
+    font-size: 14px;
+    padding: 10px 40px;
+    background-color: #FED74B;
+    border: 0.5px solid #CBA500;
+    border-radius: 20px;
+  }
+}
