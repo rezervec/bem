@@ -8,51 +8,150 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="block">
-    <div class="block__main-img">
-      <img src="img/block-1_main.png" alt="">
-    </div>
-    <div class="block__info">
-      <div class="block__published">
-        <img src="img/icon/clock.png">
-        <p>2 часа</p>
+  <div class="blocks">
+    <div class="block">
+      <div class="block__main-img">
+        <img src="img/block-1_main.png" alt="">
       </div>
-      <h4 class="block__title">
-        АКЦИЯ - Обзорная экскурсия по рекам и каналам
-        с остановками Hop on Hop Off 2019
-      </h4>
-      <div class="block__services">
-        <div class="block__service">
-          <img src="img/icon/tick.png">
-          <p>Билет на целый день</p>
+      <div class="block__info">
+        <div class="block__published">
+          <img src="img/icon/clock.png">
+          <p>2 часа</p>
         </div>
-        <div class="block__service">
-          <img src="img/icon/tick.png">
-          <p>Неограниченное число катаний</p>
-        </div>
-        <div class="block__service">
-          <img src="img/icon/tick.png">
-          <p>6 остановок у главных достопримечательностей</p>
-        </div>
-        <div class="block__service">
-          <img src="img/icon/tick.png">
-          <p>Ближайший рейс сегодня</p>
-          <div class="block__service-time">
-            <div>12:00</div>
-            <div>12:00</div>
-            <div>12:00</div>
-            <div>12:00</div>
+        <h4 class="block__title">
+          АКЦИЯ - Обзорная экскурсия по рекам и каналам
+          с остановками Hop on Hop Off 2019
+        </h4>
+        <div class="block__services">
+          <div class="block__service">
+            <img src="img/icon/tick.png">
+            <p>Билет на целый день</p>
+          </div>
+          <div class="block__service">
+            <img src="img/icon/tick.png">
+            <p>Неограниченное число катаний</p>
+          </div>
+          <div class="block__service">
+            <img src="img/icon/tick.png">
+            <p>6 остановок у главных достопримечательностей</p>
+          </div>
+          <div class="block__service">
+            <img src="img/icon/tick.png">
+            <p>Ближайший рейс сегодня</p>
+            <div class="block__service-time">
+              <div>11:20</div>
+              <div>12:00</div>
+              <div>13:50</div>
+              <div>15:10</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="block__action">
-        <div class="block__price">
-          <div>900 Р</div>
-          <p>1200 р на причале</p>
+        <div class="block__action">
+          <div class="block__price">
+            <div>900 Р</div>
+            <p>1200 р на причале</p>
+          </div>
+          <button class="block__button">Подробнее</button>
         </div>
-        <button class="block__button">Подробнее</button>
       </div>
+    </div>
+  
+    <div class="block">
+      <div class="block__main-img">
+        <img src="img/block-2_main.png" alt="">
+      </div>
+      <div class="block__info">
+        <div class="block__published">
+          <img src="img/icon/clock.png">
+          <p>2 часа</p>
+        </div>
+        <h4 class="block__title">
+          АКЦИЯ - Обзорная экскурсия по рекам и каналам
+          с остановками Hop on Hop Off 2019
+        </h4>
+        <div class="block__services">
+          <div class="block__service">
+            <img src="img/icon/tick.png">
+            <p>Билет на целый день</p>
+          </div>
+          <div class="block__service">
+            <img src="img/icon/tick.png">
+            <p>Неограниченное число катаний</p>
+          </div>
+          <div class="block__service">
+            <img src="img/icon/tick.png">
+            <p>6 остановок у главных достопримечательностей</p>
+          </div>
+          <div class="block__service">
+            <img src="img/icon/tick.png">
+            <p>Ближайший рейс сегодня</p>
+            <div class="block__service-time">
+              <div>11:20</div>
+              <div>12:00</div>
+              <div>13:50</div>
+              <div>15:10</div>
+            </div>
+          </div>
+        </div>
+        <div class="block__action">
+          <div class="block__price">
+            <div>2900 Р</div>
+            <p>1200 р на причале</p>
+          </div>
+          <button class="block__button">Подробнее</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="calcTrip">
+    <select name="route" id="route">
+      <option value="trip-B">из A в B</option>
+      <option value="trip-A">из B в A</option>
+      <option value="roundTrip">из A в B и обратно в А</option>
+    </select>
+    <select name="timeTo" id="timeTo">
+      <option value="default" disabled>Выберите время</option>
+      <option value="18:00(из A в B)">18:00(из A в B)</option>
+      <option value="18:30(из A в B)">18:30(из A в B)</option>
+      <option value="18:45(из A в B)">18:45(из A в B)</option>
+      <option value="19:00(из A в B)">19:00(из A в B)</option>
+      <option value="19:15(из A в B)">19:15(из A в B)</option>
+      <option value="21:00(из A в B)">21:00(из A в B)</option>
+    </select>
+    <select name="timeBack" id="timeBack">
+      <option value="default" disabled>Когда обратно</option>
+      <option value="18:30(из B в A)">18:30(из B в A)</option>
+      <option value="18:45(из B в A)">18:45(из B в A)</option>
+      <option value="19:00(из B в A)">19:00(из B в A)</option>
+      <option value="19:15(из B в A)">19:15(из B в A)</option>
+      <option value="19:35(из B в A)">19:35(из B в A)</option>
+      <option value="21:50(из B в A)">21:50(из B в A)</option>
+      <option value="21:55(из B в A)">21:55(из B в A)</option>
+    </select>
+    <label for="num">Количество билетов</label>
+    <input id="num" type="number">
+    <button class="calcTrip__btn">Посчитать</button>
+    <div class="calcTrip__info">
+      <!-- Вы выбрали <p name="ticket">0</p> билета
+      по маршруту <p name="trip">-</p>
+      стоимостью <p name="price">0</p>р.<br>
+      Это путешествие займет у вас <p name="time">0</p>м минут.<br>
+      Теплоход отправляется в <p name="start">-</p>,
+      а прибудет в <p name="end">-</p>.<br>
+      <div class="calcTrip__extra-info">
+        Обратное отпровление начнётся в <p name="back-start">-</p>,
+        а прибудет в <p name="back-end">-</p>
+      </div> -->
     </div>
   </div>
 </body>
 </html>
+
+<script>
+
+</script>
+
+<script src="selectors.js"></script>
+<script src="dates.js"></script>
+<script src="calcTrip.js"></script>
