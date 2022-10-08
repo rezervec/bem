@@ -12,7 +12,3 @@ for (let i = 0; i < dates.length; i++) {
     )
   }
 }
-
-const test = document.querySelectorAll(".block__service-time")
-
-// console.log(test[0].offsetHeight)
